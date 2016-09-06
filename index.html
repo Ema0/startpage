@@ -1,0 +1,100 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+ <link rel="icon"
+      type="image/png"
+      href="favz.png">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="description" content="there is nothing interesting to see here.">
+	<meta name="viewport" content="width=device-width">
+	<title>>_</title>
+	<link rel="stylesheet" href="style.css" type="text/css" charset="utf-8">
+	<script type="text/javascript" src="script.min.js"></script>
+<style type="text/css">:root #content > #center > .dose > .dosesingle,
+:root #content > #right > .dose > .dosesingle
+{display:none !important;}</style></head>
+
+<body><div class="container">
+<pre  id="content">
+{
+  <span class="key">main</span>:
+    {
+      <span class="key" id="stext">search</span>: [ <form action="https://google.com/search" method="get" target="_blank"><input id="sg" oninput="googlefunc()" type ="text" maxlength="250" style="width: 43px;" placeholder="google" tabindex="1" name="q" value="" onblur="reset1()"a/><input type="submit" value="go" name="btng"/></form><div id="comma" style="display:inline;">, </div><form action="https://duckduckgo.com/?q=" target="_blank"><input id="sd" oninput="duckfunc()" type ="text" size="6" maxlength="250" style="width: 69px;" placeholder="duckduckgo" tabindex="2" name="q" value="" onblur="reset2()"a/><input type="submit" value="go" name="btng"/></form> ],
+      <span class="key">feeds</span>: <span class="value"> <a class="item" href="https://www.feedly.com/#my" target="_blank">feedly</a></span>,
+      <span class="key">mail</span>: <span class="value"> <a class="item" href="https://mail.google.com" target="_blank">mail.google</a></span>,
+      <span class="key">repo</span>: <span class="value"> <a class="item" href="https://github.com/ema0" target="_blank">github</a></span>
+    },
+  <span class="key">social</span>: [<!--
+--><span class="value"> <a class="item" href="https://www.twitter.com" target="_blank">twitter</a></span>,<!--
+--><span class="value"> <a class="item" href="https://www.reddit.com" target="_blank">reddit</a></span>,<!--
+--><span class="value"> <a class="item" href="https://www.tumblr.com" target="_blank">tumblr</a></span>,<!--
+--><span class="value"> <a class="item" href="https://www.facebook.com" target="_blank">facebook</a></span> ],
+  <span class="key">fun</span>: [<!--
+--><span class="value"> <a class="item" href="https://www.chess.com" target="_blank">chess</a></span>,<!--
+--><span class="value"> <a class="item" href="https://www.youtube.com" target="_blank">youtube</a></span>,<!--
+--><span class="value"> <a class="item" href="https://www.putlocker.is" target="_blank">putlocker</a></span> ],
+  <span class="key">misc</span>:
+    {
+      <span class="key">work</span>: [<!--
+--><span class="value"> <a class="item" href="https://slack.com" target="_blank">slack</a></span>,<!--
+--><span class="value"> <a class="item" href="https://www.bitbucket.com" target="_blank">bitbucket</a></span>,<!--
+--><span class="value"> <a class="item" href="https://gitlab.com" target="_blank">gitlab</a></span> ],
+      <span class="key">pirate</span>: [<!--
+--><span class="value"> <a class="item" href="https://www.demonoid.pw" target="_blank">demonoid</a></span>,<!--
+--><span class="value"> <a class="item" href="https://www.bitsnoop.com" target="_blank">bitsnoop</a></span>,<!--
+--><span class="value"> <a class="item" href="https://www.torrentproject.se" target="_blank">torrentproject</a></span> ],
+      <span class="key">stuff</span>: [<!--
+--><span class="value"> <a class="item" href="http://dotshare.it" target="_blank">dotshare</a></span>,<!--
+--><span class="value"> <a class="item" href="https://deviantart.com" target="_blank">dart</a></span>,<!--
+--><span class="value"> <a class="item" href="https://alpha.wallhaven.cc" target="_blank">wallhaven</a></span>,<!--
+--><span class="value"> <a class="item" href="https://nixers.net" target="_blank">nixers</a></span> ],
+      <span class="key">news</span>: [<!--
+--><span class="value"> <a class="item" href="https://news.ycombinator,com" target="_blank">news.ycombinator</a></span> ]
+    }
+}</pre>
+</div>
+
+<script>
+	var google_search = document.getElementById("sg");
+	var duckgo_search = document.getElementById("sd");
+	var com = document.getElementById("comma");
+	var st = document.getElementById("stext");
+	function googlefunc() {
+		if (google_search.value == ""){
+			reset1();
+		}
+		else{
+		google_search.style.width = (google_search.value.length* 7) + 'px';
+		com.style.display = "none";
+		duckgo_search.style.display = "none";
+		st.innerHTML= "google";
+		}
+	};
+	function duckfunc() {
+		if (duckgo_search.value == ""){
+			reset2();
+		}
+		else{
+		duckgo_search.style.width = (duckgo_search.value.length* 7) + 'px';
+		com.style.display = "none";
+		google_search.style.display = "none";
+		st.innerHTML= "duckgo";
+		}
+	};
+	function reset1() {
+		duckgo_search.style.display = "inline";
+		google_search.style.display = "inline";
+		google_search.style.width = "43";
+		google_search.value = '';
+		com.style.display = "inline";
+		st.innerHTML="search";
+	};
+	function reset2() {
+		google_search.style.display = "inline";
+		duckgo_search.style.display = "inline";
+		duckgo_search.style.width = "69";
+		duckgo_search.value = '';
+		com.style.display = "inline";
+		st.innerHTML="search";
+	};
+</script>
+</body>
+</html>
