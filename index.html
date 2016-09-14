@@ -29,7 +29,7 @@ form, table {display:inline;margin:0px;padding:0px;font-family: PragmataPro,mono
 {
   <span class="key">main</span>:
     {
-      <span class="key" id="stext">search</span>: [ <form action="https://google.com/search" method="get" target="_blank"><input id="sg" oninput="googlefunc()" type ="text" maxlength="250" style="width: 43px;" placeholder="google" tabindex="1" name="q" value="" onblur="reset1()"><input type="submit" value="go" name="btng"/></form><div id="comma" style="display:inline;">, </div><form action="https://duckduckgo.com/?q=" target="_blank"><input id="sd" oninput="duckfunc()" type ="text" size="6" maxlength="250" style="width: 69px;" placeholder="duckduckgo" tabindex="2" name="q" value="" onblur="reset2()"><input type="submit" value="go" name="btng"/></form> ],
+      <span class="key" id="stext">search</span>: [ <form action="https://google.com/search" method="get" target="_blank"><input id="sg" oninput="googlefunc()" type ="text" maxlength="250" style="width: 44px;" placeholder="google" tabindex="1" name="q" value="" onblur="reset1()"><input type="submit" value="go" name="btng"/></form><div id="comma" style="display:inline;">, </div><form action="https://duckduckgo.com/?q=" target="_blank"><input id="sd" oninput="duckfunc()" type ="text" size="6" maxlength="250" style="width: 70px;" placeholder="duckduckgo" tabindex="2" name="q" value="" onblur="reset2()"><input type="submit" value="go" name="btng"/></form> ],
       <span class="key">feeds</span>: <span class="value"> <a class="item" href="https://www.feedly.com/#my" target="_blank">feedly</a></span>,
       <span class="key">mail</span>: <span class="value"> <a class="item" href="https://mail.google.com" target="_blank">mail.google</a></span>,
       <span class="key">repo</span>: <span class="value"> <a class="item" href="https://github.com/ema0" target="_blank">github</a></span>
@@ -94,7 +94,7 @@ form, table {display:inline;margin:0px;padding:0px;font-family: PragmataPro,mono
 	function reset1() {
 		duckgo_search.style.display = "inline";
 		google_search.style.display = "inline";
-		google_search.style.width = "43";
+		google_search.style.width = "44px";
 		google_search.value = '';
 		com.style.display = "inline";
 		st.innerHTML="search";
@@ -102,7 +102,7 @@ form, table {display:inline;margin:0px;padding:0px;font-family: PragmataPro,mono
 	function reset2() {
 		google_search.style.display = "inline";
 		duckgo_search.style.display = "inline";
-		duckgo_search.style.width = "69";
+		duckgo_search.style.width = "70px";
 		duckgo_search.value = '';
 		com.style.display = "inline";
 		st.innerHTML="search";
